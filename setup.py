@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 requires = ['requests']
 
 setup(name='totango',
-      version='0.1',
+      version='0.2',
       description='Totango Python Library',
       author='Dominik Gehl',
       author_email='dominik.gehl@returnpath.com',

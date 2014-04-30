@@ -11,7 +11,7 @@ or
 
 ##Usage
 
-   import totango
+       import totango
 
-   tt = totango.Totango('SP-XXXX-XX', 'user_id')
-   tt.track('module','action')
+       tt = totango.Totango('SP-XXXX-XX', 'user_id')
+       tt.track('module','action')

@@ -1,5 +1,7 @@
 import requests
 
+__version__ = '0.3.0'
+
 class Totango:
 
     def __init__(self, service_id, user_id=None, user_name=None, account_id=None, account_name=None):
@@ -41,7 +43,10 @@ class Totango:
         return payload
 
     def _post(self, payload):
-        r = requests.post(self.url, data=payload)
+        r = requests.post(
+            self.url, data=payload,
+            headers={'User-Agent': "python-totango/{0}".format(__version__)}
+        )
         r.raise_for_status()
         return r
 

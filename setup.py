@@ -2,8 +2,10 @@ from setuptools import setup, find_packages
 
 requires = ['requests']
 
+from totango import __version__
+
 setup(name='totango',
-      version='0.2',
+      version=__version__,
       description='Totango Python Library',
       author='Dominik Gehl',
       author_email='dominik.gehl@returnpath.com',

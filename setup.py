@@ -1,11 +1,20 @@
+import ast
+import os
+
 from setuptools import setup, find_packages
+
+
+def version(filename):
+    """Return version string."""
+    with open(filename) as input_file:
+        for line in input_file:
+            if line.startswith('__version__'):
+                return ast.parse(line).body[0].value.s
 
 requires = ['requests']
 
-from totango import __version__
-
 setup(name='totango',
-      version=__version__,
+      version=version(os.path.join('totango', '__init__.py')),
       description='Totango Python Library',
       author='German Bourdin',
       author_email='admin@gbourdin.com',

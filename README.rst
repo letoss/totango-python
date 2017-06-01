@@ -13,7 +13,6 @@ Installation
 
 ::
 
-    pip install requests
     pip install totango
 
 

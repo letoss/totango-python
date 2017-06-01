@@ -21,6 +21,7 @@ Usage
 =====
 
 ::
+
     import totango
 
     tt = totango.Totango('SP-XXXX-XX', 'user_id')

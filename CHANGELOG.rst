@@ -2,6 +2,12 @@
 Changelog
 =========
 
+0.3.2 (2017-06-1)
+-----------------------------------------
+
+* Updates to the setup script so that requests doesn't need to be installed
+  manually
+
 0.3.1 (2017-06-1)
 -----------------------------------------
 

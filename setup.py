@@ -25,6 +25,7 @@ requires = ['requests']
 setup(name='totango',
       version=version(os.path.join('totango', '__init__.py')),
       description='Totango Python Library',
+      # This is not working, please FIXME.
       long_description='%s\n%s' % (read('README.rst'), re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))),
       author='German Bourdin',
       author_email='admin@gbourdin.com',
